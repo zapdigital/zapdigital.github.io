@@ -1,0 +1,12 @@
+body {
+	background-color: dodgerblue;
+	/*display: flex;*/
+}
+
+li {
+	lost-column: 1/5;
+}
+
+.respType {
+	font-size: responsive;
+}

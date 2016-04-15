@@ -1,0 +1,46 @@
+body {
+	background-color: dodgerblue;
+	/*display: flex;*/
+}
+
+li {
+	width: calc(99.99% * 1/5 - (30px - 30px * 1/5));
+}
+
+li:nth-child(1n) {
+	float: left;
+	margin-right: 30px;
+	clear: none;
+}
+
+li:last-child {
+	margin-right: 0;
+}
+
+li:nth-child(5n) {
+	margin-right: 0;
+	float: right;
+}
+
+li:nth-child(5n + 1) {
+	clear: left;
+}
+
+.respType {
+	font-size: calc(12px + 9 * ((100vw - 420px) / 860));
+}
+
+@media screen and (min-width: 1280px) {
+
+	.respType {
+		font-size: 21px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+
+	.respType {
+		font-size: 12px;
+	}
+}
+/*# sourceMappingURL=main.css.map */
