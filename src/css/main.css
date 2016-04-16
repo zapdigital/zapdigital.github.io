@@ -1,12 +1,72 @@
+/*
+	Global Styles
+*/
+
+/* Support Flexbox with Lost Grid */
+
+@lost flexbox flex;
+
 body {
-	background-color: dodgerblue;
-	/*display: flex;*/
+	/*lost-utility: edit;*/
 }
 
-li {
-	lost-column: 1/5;
+section {
+	lost-row: 1/2;
 }
 
-.respType {
-	font-size: responsive;
+
+
+/*
+	Navigation
+*/
+
+
+
+/*
+	Portfolio
+*/
+
+.zap-bolt: {
+	lost-column: 1/2;
 }
+
+.project-gallery {
+	lost-column: 1/2;
+}
+
+.project-image {
+	lost-column: 1/2;
+}
+
+.project-image img {
+	max-width: 100%;
+	max-height: 500px;
+}
+
+.project-info {
+	lost-column: 1/2;
+}
+
+
+
+/* 
+	About
+*/
+
+.profile-image img {
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+}
+
+
+
+/*
+	Footer
+*/
+
+
+
+/*
+	Media Queries
+*/

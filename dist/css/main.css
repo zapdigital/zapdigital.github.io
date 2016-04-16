@@ -1,46 +1,161 @@
+/*
+	Global Styles
+*/
+
+/* Support Flexbox with Lost Grid */
+
 body {
-	background-color: dodgerblue;
-	/*display: flex;*/
+	/*lost-utility: edit;*/
 }
 
-li {
-	width: calc(99.99% * 1/5 - (30px - 30px * 1/5));
+section {
+	width: 100%;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	height: calc(99.99% * 1/2 - (30px - 30px * 1/2));
+	margin-bottom: 30px;
 }
 
-li:nth-child(1n) {
-	float: left;
+section:last-child {
+	margin-bottom: 0;
+}
+
+
+
+/*
+	Navigation
+*/
+
+
+
+/*
+	Portfolio
+*/
+
+.zap-bolt: {
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
+}
+
+.zap-bolt::nth-child(1n) {
 	margin-right: 30px;
-	clear: none;
 }
 
-li:last-child {
+.zap-bolt::last-child {
 	margin-right: 0;
 }
 
-li:nth-child(5n) {
-	margin-right: 0;
+.zap-bolt::nth-child(2n) {
 	float: right;
 }
 
-li:nth-child(5n + 1) {
-	clear: left;
+.zap-bolt::nth-child(2n) {
+	margin-right: 0;
 }
 
-.respType {
-	font-size: calc(12px + 9 * ((100vw - 420px) / 860));
+.project-gallery {
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
 }
 
-@media screen and (min-width: 1280px) {
-
-	.respType {
-		font-size: 21px;
-	}
+.project-gallery:nth-child(1n) {
+	margin-right: 30px;
 }
 
-@media screen and (max-width: 420px) {
-
-	.respType {
-		font-size: 12px;
-	}
+.project-gallery:last-child {
+	margin-right: 0;
 }
+
+.project-gallery:nth-child(2n) {
+	float: right;
+}
+
+.project-gallery:nth-child(2n) {
+	margin-right: 0;
+}
+
+.project-image {
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
+}
+
+.project-image:nth-child(1n) {
+	margin-right: 30px;
+}
+
+.project-image:last-child {
+	margin-right: 0;
+}
+
+.project-image:nth-child(2n) {
+	float: right;
+}
+
+.project-image:nth-child(2n) {
+	margin-right: 0;
+}
+
+.project-image img {
+	max-width: 100%;
+	max-height: 500px;
+}
+
+.project-info {
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
+}
+
+.project-info:nth-child(1n) {
+	margin-right: 30px;
+}
+
+.project-info:last-child {
+	margin-right: 0;
+}
+
+.project-info:nth-child(2n) {
+	float: right;
+}
+
+.project-info:nth-child(2n) {
+	margin-right: 0;
+}
+
+
+
+/* 
+	About
+*/
+
+.profile-image img {
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+}
+
+
+
+/*
+	Footer
+*/
+
+
+
+/*
+	Media Queries
+*/
 /*# sourceMappingURL=main.css.map */
