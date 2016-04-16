@@ -53,6 +53,7 @@ section {
 
 .portfolio {
 	display: flex;
+	margin-bottom: 10rem;
 }
 
 .zap-bolt {
@@ -90,10 +91,26 @@ section {
 	About
 */
 
+.about {
+}
+
+.profile {
+	display: flex;
+	lost-row: 1/4;
+}
+
 .profile-image img {
 	width: 150px;
 	height: 150px;
 	border-radius: 100%;
+}
+
+.profile-image {
+	lost-column: 1/2;
+}
+
+.profile-info {
+	lost-column: 1/2;
 }
 
 

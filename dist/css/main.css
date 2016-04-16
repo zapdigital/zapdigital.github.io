@@ -82,6 +82,7 @@ section:after {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	margin-bottom: 10rem;
 }
 
 .zap-bolt {
@@ -202,10 +203,79 @@ section:after {
 	About
 */
 
+.about {
+}
+
+.profile {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	height: calc(99.99% * 1/4 - (30px - 30px * 1/4));
+	margin-bottom: 30px;
+}
+
+.profile:last-child {
+	margin-bottom: 0;
+}
+
 .profile-image img {
 	width: 150px;
 	height: 150px;
 	border-radius: 100%;
+}
+
+.profile-image {
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
+}
+
+.profile-image:nth-child(1n) {
+	margin-right: 30px;
+}
+
+.profile-image:last-child {
+	margin-right: 0;
+}
+
+.profile-image:nth-child(2n) {
+	float: right;
+}
+
+.profile-image:nth-child(2n) {
+	margin-right: 0;
+}
+
+.profile-info {
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
+}
+
+.profile-info:nth-child(1n) {
+	margin-right: 30px;
+}
+
+.profile-info:last-child {
+	margin-right: 0;
+}
+
+.profile-info:nth-child(2n) {
+	float: right;
+}
+
+.profile-info:nth-child(2n) {
+	margin-right: 0;
 }
 
 
