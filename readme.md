@@ -9,3 +9,8 @@ This framework is using:
 - [Rucksack](https://simplaio.github.io/rucksack/)
 - [Autoprefixer(through Rucksack)](http://simplaio.github.io/rucksack/docs/#autoprefixing)
 - [Browser-Sync](https://www.browsersync.io/)
+
+## To Do
+- [ ] move HTML, images to src folder
+- [ ] add minification to build process
+- [ ] optimize images
