@@ -5,21 +5,20 @@
 /* Support Flexbox with Lost Grid */
 
 body {
-	/*lost-utility: edit;*/
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-section {
-	width: 100%;
-	-webkit-box-flex: 0;
-	-webkit-flex: 0 0 auto;
-	    -ms-flex: 0 0 auto;
-	        flex: 0 0 auto;
-	height: calc(99.99% * 1/2 - (30px - 30px * 1/2));
-	margin-bottom: 30px;
-}
-
-section:last-child {
-	margin-bottom: 0;
+a:visited {
+	color: black;
 }
 
 
@@ -28,34 +27,48 @@ section:last-child {
 	Navigation
 */
 
+.main-nav {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin: auto;
+	width: 100%;
+}
+
+.main-nav a {
+	text-decoration: none;
+}
+
+.main-nav li {
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
+	margin-left: 8px;
+	margin-right: 8px;
+	list-style: none;
+}
+
+.main-title {
+	font-size: 2.5rem;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+
 
 
 /*
 	Portfolio
 */
 
-.zap-bolt: {
-	-webkit-box-flex: 0;
-	-webkit-flex: 0 0 auto;
-	    -ms-flex: 0 0 auto;
-	        flex: 0 0 auto;
-	width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
+.portfolio {
 }
 
-.zap-bolt::nth-child(1n) {
-	margin-right: 30px;
-}
-
-.zap-bolt::last-child {
-	margin-right: 0;
-}
-
-.zap-bolt::nth-child(2n) {
-	float: right;
-}
-
-.zap-bolt::nth-child(2n) {
-	margin-right: 0;
+.zap-bolt img: {
+	width: 150px;
+	height: 150px;
 }
 
 .project-gallery {
@@ -82,57 +95,18 @@ section:last-child {
 	margin-right: 0;
 }
 
+.project {
+}
+
 .project-image {
-	-webkit-box-flex: 0;
-	-webkit-flex: 0 0 auto;
-	    -ms-flex: 0 0 auto;
-	        flex: 0 0 auto;
-	width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
-}
-
-.project-image:nth-child(1n) {
-	margin-right: 30px;
-}
-
-.project-image:last-child {
-	margin-right: 0;
-}
-
-.project-image:nth-child(2n) {
-	float: right;
-}
-
-.project-image:nth-child(2n) {
-	margin-right: 0;
 }
 
 .project-image img {
 	max-width: 100%;
-	max-height: 500px;
+	max-height: 300px;
 }
 
 .project-info {
-	-webkit-box-flex: 0;
-	-webkit-flex: 0 0 auto;
-	    -ms-flex: 0 0 auto;
-	        flex: 0 0 auto;
-	width: calc(99.99% * 1/2 - (30px - 30px * 1/2));
-}
-
-.project-info:nth-child(1n) {
-	margin-right: 30px;
-}
-
-.project-info:last-child {
-	margin-right: 0;
-}
-
-.project-info:nth-child(2n) {
-	float: right;
-}
-
-.project-info:nth-child(2n) {
-	margin-right: 0;
 }
 
 
