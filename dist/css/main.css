@@ -21,6 +21,20 @@ a:visited {
 	color: black;
 }
 
+section {
+	*zoom: 1;
+}
+
+section:before {
+	content: '';
+	display: table;
+}
+
+section:after {
+	content: '';
+	display: table;
+	clear: both;
+}
 
 
 /*
