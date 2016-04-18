@@ -3,7 +3,6 @@
   "env": {
     "browser": true,
     "jquery": true,
-    "node: true,
-    "commonjs": true
+    "amd": true
   }
 }
