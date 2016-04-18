@@ -2,6 +2,8 @@
   "extends": "semistandard",
   "env": {
     "browser": true,
-    "jquery": true
+    "jquery": true,
+    "node: true,
+    "commonjs": true
   }
 }
