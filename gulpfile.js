@@ -16,7 +16,12 @@ var reload 			 = browserSync.reload;
 // Styles - PostCSS, Lost, Rucksack, sourcemaps
 gulp.task('styles', function () {
 	return gulp.src('./src/css/*.css')
-		.pipe(plumber())
+		.pipe(plumber({
+			errorHandler: function (err) {
+				console.log(err);
+				this.emit('end');
+			}
+		}))
 		.pipe(sourcemaps.init())
 		.pipe(postcss([
 			precss(),
@@ -27,7 +32,6 @@ gulp.task('styles', function () {
 			flexboxFixes()
 		]))
 		.pipe(sourcemaps.write())
-		.pipe(plumber.stop())
 		.pipe(gulp.dest('./dist/css'))
 		.pipe(reload({stream: true}));
 });
