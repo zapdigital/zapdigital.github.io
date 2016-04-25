@@ -12,6 +12,7 @@
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^2.4.0",
+    "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.1.0",
     "gulp-slim": "^0.3.0",
     "gulp-sourcemaps": "^1.6.0",
