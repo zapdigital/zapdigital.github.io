@@ -8,6 +8,7 @@ var flexboxFixes = require('postcss-flexbugs-fixes');
 var imagemin		 = require('gulp-imagemin');
 var slim 				 = require('gulp-slim');
 var ghPages 		 = require('gulp-gh-pages');
+var plumber 		 = require('gulp-plumber');
 
 var browserSync  = require('browser-sync');
 var reload 			 = browserSync.reload;
@@ -15,6 +16,7 @@ var reload 			 = browserSync.reload;
 // Styles - PostCSS, Lost, Rucksack, sourcemaps
 gulp.task('styles', function () {
 	return gulp.src('./src/css/*.css')
+		.pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(postcss([
 			precss(),
@@ -25,6 +27,7 @@ gulp.task('styles', function () {
 			flexboxFixes()
 		]))
 		.pipe(sourcemaps.write())
+		.pipe(plumber.stop())
 		.pipe(gulp.dest('./dist/css'))
 		.pipe(reload({stream: true}));
 });
