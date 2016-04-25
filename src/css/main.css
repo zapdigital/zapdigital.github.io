@@ -28,9 +28,13 @@ section {
 	Navigation
 */
 
+nav {
+	lost-flex-container: row;
+	lost-center: 500px;
+}
+
 .main-nav {
 	display: flex;
-	lost-center: 500px;
     margin-bottom: 0;
 }
 
