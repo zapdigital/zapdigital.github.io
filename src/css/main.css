@@ -62,6 +62,11 @@ nav {
     line-height: 1.25;
 	flex-grow: 1;
     color: #00A19B;
+    background: url(../img/lightning.svg);
+    background-size: 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 60%;
 }
 
 /*
