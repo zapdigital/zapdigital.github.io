@@ -30,12 +30,13 @@ section {
 
 nav {
 	lost-flex-container: row;
-	lost-center: 500px;
+	lost-center: 320px;
 }
 
 .main-nav {
 	display: flex;
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 .main-nav a {
@@ -51,11 +52,12 @@ nav {
 	list-style: none;
 }
 
-.main-nav li:nth-child(n+3):before {
+/*dashes between nav items */
+/*.main-nav li:nth-child(n+3):before {
     content: '-';
     margin-right: 8px;
     color: white;
-}
+}*/
 
 .main-title {
 	font-size: 5rem;
@@ -68,6 +70,8 @@ nav {
     background-position: center;
     background-position: 60%;
 }
+
+
 
 /*
     Sections
