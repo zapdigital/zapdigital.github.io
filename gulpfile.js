@@ -52,7 +52,7 @@ gulp.task('watch', function () {
 	gulp.watch('./src/**/*.css', ['styles', reload]);
 
 	// Watch slim files
-	gulp.watch('./src/views/*.slim', ['markup', reload]);
+	gulp.watch('./src/views/**/*.slim', ['markup', reload]);
 
 	// Watch image files
 	gulp.watch('./src/img/*', ['images', reload]);
