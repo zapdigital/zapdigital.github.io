@@ -54,12 +54,7 @@ section {
     color: white;
 }
 
-.main-title {
-	font-size: 5rem;
-    line-height: 1.25;
-	flex-grow: 1;
-    color: #00A19B;
-}
+
 
 /*
     Sections
@@ -127,32 +122,36 @@ section {
 */
 
 body {
-  background: -webkit-linear-gradient(bottom left, #64bfbe, #EEE);
-  background: linear-gradient(to top right, #64bfbe, #EEE);
+  background: linear-gradient(to top right, #64bfbe, #EEE );
   height: 100vh;
   width: 100vw;
   padding: 50px;
   overflow: hidden;
   color: #FFF;
-}
-body .text-wrap {
-  margin: 0;
-  position: relative;
-  width: 100%;
-}
-body .text-wrap svg {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  font-family: 'Fugaz One';
-  font-size: 120px;
-  text-transform: uppercase;
-}
-body .text-wrap svg .img-layer {
-  fill: url(#p-img);
-}
-body .text-wrap svg .gradient-layer {
-  fill: url(#gr-overlay);
+  
+  .text-wrap{
+
+    margin: 0;
+    position: relative;
+    width: 100%;
+  
+    svg {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      font-family: 'Fugaz One';
+      font-size: 120px;
+      text-transform: uppercase;
+      
+      .img-layer {
+        fill: url(#p-img);
+      }
+      
+      .gradient-layer {
+        fill: url(#gr-overlay);
+      }
+    }
+  }
 }
 
 h1 {
@@ -165,19 +164,29 @@ h1 {
 h2 {
   font-family: 'Fugaz One';
   position: relative;
-  color: rgba(34, 34, 34, 0.8);
+  color: rgba(#222, .8);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing:1px;
   position: absolute;
   bottom: -25px;
   right: 400px;
 }
 
 h3 {
-  color: #3D3247;
+  color: rgba(#222, .8);
   text-align: center;
-}
-h3 span {
-  color: #CFFF00;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  span {
+    font-size: 2rem;
+    color: #CFFF00;
+  background: url(../img/lightning.svg);
+  background-size: 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px;
+    margin: -100px;
+  }
 }
 
