@@ -22,8 +22,8 @@ $accent: #004e66;
 body, html {
   margin: 0;
   padding: 0;
-  background: #b46cdd;
 }
+
 body {
   font-family: "Karla", sans-serif;
   color: #F58371;
@@ -36,12 +36,14 @@ section {
 	lost-flex-container: row;
 }
 
+
+
 /*
   Redesign
 */
 
 body {
-  /*background: linear-gradient(to top right, $primary2, $primary1 );*/
+  /*background: linear-gradient(to top right, $accent, $background );*/
   background: $background;
   height: 100vh;
   width: 100vw;
@@ -80,7 +82,7 @@ body {
     width: 1000px;
     height: 178px;
     margin: 0 auto;
-    filter: hue-rotate(320deg);
+    filter: hue-rotate(200deg);
   }
 
   h2 {
@@ -96,7 +98,7 @@ body {
 }
 
 .tagline h3 {
-  color: rgba(#222, .8);
+  color: $accent;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -104,7 +106,7 @@ body {
 
   span {
     font-size: 2rem;
-    color: $color2;
+    color: $dark;
     background: url(../img/lightning.svg);
     background-size: 65px;
     background-repeat: no-repeat;
@@ -129,7 +131,7 @@ body {
 
 .main-nav a {
 	text-decoration: none;
-  color: inherit;
+  color: $accent;
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -155,7 +157,11 @@ body {
 .title {
   font-size: 2em;
   lost-center: 500px;
-  color: rgba(#222, .8);
+  color: $dark;
+}
+
+section > div > p {
+  color: $accent;
 }
 
 /* 
