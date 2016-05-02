@@ -1,4 +1,17 @@
 /*
+  Colors
+*/
+$color1: #e1eef6;
+$color2: #ff5f2e;
+$color3: #fcbe32;
+$color4: #004e66;
+
+$background: #e1eef6;
+$dark: #ff5f2e;
+$primary: #fcbe32;
+$accent: #004e66;
+
+/*
 	Global Styles
 */
 
@@ -28,7 +41,8 @@ section {
 */
 
 body {
-  background: linear-gradient(to top right, #64bfbe, #EEE );
+  /*background: linear-gradient(to top right, $primary2, $primary1 );*/
+  background: $background;
   height: 100vh;
   width: 100vw;
   padding: 50px;
@@ -66,6 +80,7 @@ body {
     width: 1000px;
     height: 178px;
     margin: 0 auto;
+    filter: hue-rotate(320deg);
   }
 
   h2 {
@@ -89,6 +104,7 @@ body {
 
   span {
     font-size: 2rem;
+    color: $color2;
     background: url(../img/lightning.svg);
     background-size: 65px;
     background-repeat: no-repeat;
