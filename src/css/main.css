@@ -1,15 +1,13 @@
 /*
   Colors
 */
-$color1: #e1eef6;
-$color2: #ff5f2e;
-$color3: #fcbe32;
-$color4: #004e66;
 
 $background: #e1eef6;
-$dark: #ff5f2e;
+$dark: #D83840;
 $primary: #fcbe32;
 $accent: #004e66;
+
+
 
 /*
 	Global Styles
@@ -26,39 +24,36 @@ body, html {
 
 body {
   font-family: "Karla", sans-serif;
-  color: #F58371;
+  background: $background;
 }
-
-
 
 section {
-	lost-utility: clearfix;
-	lost-flex-container: row;
+  lost-utility: clearfix;
+  lost-flex-container: row;
 }
 
-
-
-/*
-  Redesign
-*/
+/* Redesign and banner-logo */
 
 body {
   /*background: linear-gradient(to top right, $accent, $background );*/
-  background: $background;
-  height: 100vh;
-  width: 100vw;
-  padding: 50px;
-  overflow: hidden;
-  color: #FFF;
+  /*height: 100vh;*/
+  /*width: 100vw;*/
+  /*padding: 50px;*/
+  /*overflow: hidden;*/
+  /*color: #FFF;*/
   
   .text-wrap{
+    lost-utility: edit;
+    lost-center: 100% flex;
+    lost-flex-container: row;
 
     margin: 0;
-    position: relative;
+    padding-top: 50px;
+    /*position: relative;*/
     width: 100%;
   
     svg {
-      position: absolute;
+      /*position: absolute;*/
       width: 100%;
       height: auto;
       font-family: 'Fugaz One';
@@ -76,13 +71,22 @@ body {
   }
 }
 
+.gradient-layer {
+  max-height: 600px;
+}
+
 .text-wrap {
+
   h1 {
-    position: relative;
-    width: 1000px;
-    height: 178px;
+    /*position: relative;*/
+    /*width: 1000px;*/
+    /*height: 178px;*/
     margin: 0 auto;
-    filter: hue-rotate(200deg);
+    filter: hue-rotate(70deg);
+
+    lost-column: 1;
+    max-height: 550px;
+    /*display: inline-flex;*/
   }
 
   h2 {
@@ -91,9 +95,13 @@ body {
     color: rgba(#222, .8);
     text-transform: uppercase;
     letter-spacing:1px;
-    position: absolute;
-    bottom: -25px;
-    right: 400px;
+    /*position: absolute;*/
+    bottom: 25px;
+    left: 600px;
+
+    /*lost-column: 1/4;*/
+    /*lost-offset: -2/3;*/
+    /*display: inline-flex;*/
   }
 }
 
@@ -103,6 +111,7 @@ body {
   margin-top: 3rem;
   margin-bottom: 3rem;
   font-size: 1.5rem;
+
 
   span {
     font-size: 2rem;
@@ -142,17 +151,15 @@ body {
 	list-style: none;
 }
 
-.main-nav li:nth-child(n+3):before {
-  content: '-';
-  margin-right: 8px;
-  color: white;
-}
-
 
 
 /*
   Sections
 */
+
+section {
+  lost-flex-container: column;
+}
 
 .title {
   font-size: 2em;
@@ -160,52 +167,28 @@ body {
   color: $dark;
 }
 
-section > div > p {
+.main-text {
   color: $accent;
+  lost-center: 900px 10% flex;
+  text-align: center;
 }
 
-/* 
+
+
+/*
   About
 */
 
-.about-text {
-  lost-center: 5000px;
-  padding: 0 100px;
-  text-align: center;
-}
+
+
+
 
 /*
-	Portfolio
+  Hire Us 
 */
 
-.project {
-	display: flex
+/* Hire Button */
+.typeform-share {
+  lost-center: 500px;
 }
-
-.project div {
-  padding: 10px;
-}
-
-.portfolio-image {
-  lost-column: 1/3;
-  lost-move: 1/6;
-  lost-align: center;
-}
-
-.portfolio-image img {
-  width: 100%;
-  max-width: 350px;
-}
-
-.project-header {
-  font-size: 1.3em;
-  text-align: center;
-  font-weight: bold;
-}
-
-.portfolio-text {
-  lost-column: 1/3;
-  lost-move: 1/6;
-}
-
 
