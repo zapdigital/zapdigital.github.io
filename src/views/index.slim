@@ -1,5 +1,5 @@
 include header
-.text-wrap.main-banner
+/!.text-wrap.main-banner
   h1
     svg viewbox=("0 0 500 90") 
       pattern#p-img height="200%" patternunits="userSpaceOnUse" viewbox=("0 0 400 125") width="150%" x="0%" y="-100%" 
@@ -14,10 +14,16 @@ include header
       text.gradient-layer dy=".35em" text-anchor="middle" x="50%" y="50%" 
         | ZAP
   h2 &bull;Digital
+.wrapper
+  .box.img
+    h1
+      | ZAP
+    div DIGITAL
+
 div.tagline
   h3
     | Designs that 
-    span.spark.animated.flash spark
+    span spark
 
 section.about
   h2.title name="about" About Us
@@ -30,3 +36,5 @@ section.hire
     p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur aperiam odio doloribus illum facilis beatae quibusdam officiis ab aliquam tempora asperiores tempore, sit in modi recusandae dignissimos iste necessitatibus perferendis?
     a class="typeform-share link" href="https://josh342.typeform.com/to/TSOoZW" data-mode="1" target="_blank" Hire Us
     <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+
+include footer

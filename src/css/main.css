@@ -1,194 +1,176 @@
-/*
+    /*
   Colors
 */
-
-$background: #e1eef6;
-$dark: #D83840;
-$primary: #fcbe32;
-$accent: #004e66;
-
-
-
-/*
+    
+    $background: #e1eef6;
+    $dark: #D83840;
+    $primary: #fcbe32;
+    $accent: #004e66;
+    /*
 	Global Styles
 */
-
-/* Support Flexbox with Lost Grid */
-
-@lost flexbox flex;
-
-body, html {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Karla", sans-serif;
-  background: $background;
-}
-
-section {
-  lost-utility: clearfix;
-  lost-flex-container: row;
-}
-
-/* Redesign and banner-logo */
-
-body {
-  /*background: linear-gradient(to top right, $accent, $background );*/
-  /*height: 100vh;*/
-  /*width: 100vw;*/
-  /*padding: 50px;*/
-  /*overflow: hidden;*/
-  /*color: #FFF;*/
-  
-  .text-wrap{
-    lost-utility: edit;
-    lost-center: 100% flex;
-    lost-flex-container: row;
-
-    margin: 0;
-    padding-top: 50px;
-    /*position: relative;*/
-    width: 100%;
-  
-    svg {
-      /*position: absolute;*/
-      width: 100%;
-      height: auto;
-      font-family: 'Fugaz One';
-      font-size: 120px;
-      text-transform: uppercase;
-      
-      .img-layer {
-        fill: url(#p-img);
-      }
-      
-      .gradient-layer {
-        fill: url(#gr-overlay);
-      }
+    /* Support Flexbox with Lost Grid */
+    
+    @lost flexbox flex;
+    body,
+    html {
+        margin: 0;
+        padding: 0;
     }
-  }
-}
-
-.gradient-layer {
-  max-height: 600px;
-}
-
-.text-wrap {
-
-  h1 {
-    /*position: relative;*/
-    /*width: 1000px;*/
-    /*height: 178px;*/
-    margin: 0 auto;
-    filter: hue-rotate(70deg);
-
-    lost-column: 1;
-    max-height: 550px;
-    /*display: inline-flex;*/
-  }
-
-  h2 {
-    font-family: 'Fugaz One';
-    position: relative;
-    color: rgba(#222, .8);
-    text-transform: uppercase;
-    letter-spacing:1px;
-    /*position: absolute;*/
-    bottom: 25px;
-    left: 600px;
-
-    /*lost-column: 1/4;*/
-    /*lost-offset: -2/3;*/
-    /*display: inline-flex;*/
-  }
-}
-
-.tagline h3 {
-  color: $accent;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  font-size: 1.5rem;
-
-
-  span {
-    font-size: 2rem;
-    color: $dark;
-    background: url(../img/lightning.svg);
-    background-size: 65px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 100px;
-    margin-top: -100px;
-    padding-bottom: 100px;
-    margin-bottom: -100px;
-  }
-}
-
-
-/*
+    
+    body {
+        font-family: "Karla", sans-serif;
+        background: $background;
+    }
+    
+    section {
+        lost-utility: clearfix;
+        lost-flex-container: row;
+    }
+    /* Redesign and banner-logo */
+    
+    body {
+        background: linear-gradient(45deg, #fff, #ccc);
+        padding: 50px;
+        overflow: hidden;
+        color: #111;
+        /* 
+    Text Mask
+*/
+        & .box {
+            font-family: "Fugaz One", sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 0.8;
+            margin: 0;
+            & h1 {
+                font-size: calc(80px + 10vmin);
+                margin: 0;
+            }
+            & div {
+                font-size: calc(25px + 1vmin);
+            }
+            &.img {
+                background-image: url(https://media.giphy.com/media/NEVT1WQFlHec8/giphy.gif);
+                background-size: auto;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+        }
+    }
+    
+    @media (max-width: 800px) {
+        .img {
+            background-size: 120%;
+        }
+    }
+    /*
+    Tagline
+*/
+    
+    .tagline h3 {
+        color: $accent;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1;
+        background: url(../img/lightning.svg);
+        background-size: 75px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 100px;
+        margin-top: -20px;
+        padding-bottom: 100px;
+        margin-bottom: -50px;
+        span {
+            font-size: 2rem;
+            display: block;
+            color: $dark;
+            text-transform: uppercase;
+        }
+    }
+    /*
 	Navigation
 */
-
-.main-nav {
-	display: flex;
-	lost-center: 500px;
-  margin-bottom: 0;
-}
-
-.main-nav a {
-	text-decoration: none;
-  color: $accent;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.main-nav li {
-	align-self: center;
-	margin-left: 12px;
-	list-style: none;
-}
-
-
-
-/*
+    
+    .main-nav {
+        display: flex;
+        lost-center: 500px;
+        margin-bottom: 0;
+    }
+    
+    .main-nav a {
+        text-decoration: none;
+        color: $accent;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    
+    .main-nav li {
+        align-self: center;
+        margin-left: 12px;
+        list-style: none;
+    }
+    /*
   Sections
 */
-
-section {
-  lost-flex-container: column;
-}
-
-.title {
-  font-size: 2em;
-  lost-center: 500px;
-  color: $dark;
-}
-
-.main-text {
-  color: $accent;
-  lost-center: 900px 10% flex;
-  text-align: center;
-}
-
-
-
-/*
+    
+    section {
+        lost-flex-container: column;
+    }
+    
+    .title {
+        font-size: 2em;
+        lost-center: 500px;
+        color: $dark;
+    }
+    
+    .main-text {
+        color: $accent;
+        lost-center: 900px 10% flex;
+        text-align: center;
+    }
+    /*
   About
 */
-
-
-
-
-
-/*
+    
+    h2 {
+        margin: 20px;
+    }
+    /*
   Hire Us 
 */
-
-/* Hire Button */
-.typeform-share {
-  lost-center: 500px;
-}
-
+    /* Hire Button */
+    
+    .typeform-share {
+        lost-center: 500px;
+    }
+    /* 
+    Footer
+*/
+    
+    footer {
+        & hr {
+            width: 200px;
+            margin-top: 50px;
+        }
+        & ul {
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+            & li {
+                display: inline-block;
+                &:not(:last-child):after {
+                    content: '/';
+                    margin: 0 10px;
+                }
+            }
+        }
+        & .zap-emoji {
+            background: url(../img/zap-emoji.png);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 15px;
+        }
+    }
