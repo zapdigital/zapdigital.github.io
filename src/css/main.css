@@ -144,6 +144,19 @@
     
     .typeform-share {
         lost-center: 500px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: $dark;
+        border: 1px solid $dark;
+        padding: 5px 10px;
+        border-radius: 2px;
+        &:hover {
+            background: rgba(#c0262d, 0.1);
+        }
+        &:active {
+            background: rgba(#c0262d, 0.2);
+        }
     }
     /* 
     Footer
@@ -160,7 +173,7 @@
             padding: 0;
             & li {
                 display: inline-block;
-                &:not(:last-child):after {
+                &:not(: last-child):after {
                     content: '/';
                     margin: 0 10px;
                 }
