@@ -32,7 +32,6 @@
     body {
         background: linear-gradient(45deg, #fff, #ccc);
         padding: 50px;
-        overflow: hidden;
         color: #111;
         /* 
     Text Mask
