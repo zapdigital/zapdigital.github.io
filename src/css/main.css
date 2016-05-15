@@ -1,7 +1,7 @@
     /*
   Colors
 */
-    
+
     $background: #e1eef6;
     $dark: #D83840;
     $primary: #fcbe32;
@@ -10,30 +10,31 @@
 	Global Styles
 */
     /* Support Flexbox with Lost Grid */
-    
+
     @lost flexbox flex;
     body,
     html {
         margin: 0;
         padding: 0;
     }
-    
+
     body {
         font-family: "Karla", sans-serif;
         background: $background;
     }
-    
+
     section {
         lost-utility: clearfix;
         lost-flex-container: row;
     }
     /* Redesign and banner-logo */
-    
+
     body {
         background: linear-gradient(45deg, #fff, #ccc);
-        padding: 50px;
+        /* padding: 50px; */
         color: #111;
-        /* 
+
+        /*
     Text Mask
 */
         & .box {
@@ -43,22 +44,34 @@
             font-weight: bold;
             line-height: 0.8;
             margin: 0;
-            & h1 {
-                font-size: calc(80px + 10vmin);
+
+            background: url(https://media.giphy.com/media/3o85xuMj18HeA47AZy/giphy.gif);
+
+            h1 {
+                font-size: 33vw;
                 margin: 0;
+                padding: 50px;
+                line-height: 1;
             }
-            & div {
-                font-size: calc(25px + 1vmin);
+            & span {
+                font-size: .10em;
+                line-height: .5em;
+                display: block;
             }
             &.img {
-                background-image: url(https://media.giphy.com/media/NEVT1WQFlHec8/giphy.gif);
-                background-size: auto;
-                -webkit-text-fill-color: transparent;
-                -webkit-background-clip: text;
+                /* background-image: url(https://media.giphy.com/media/NEVT1WQFlHec8/giphy.gif); */
+                 background-image: url(https://media.giphy.com/media/3o85xuMj18HeA47AZy/giphy.gif);
+                background-size: auto 100%;
+                background-position: center;
+                /* background-image: url(https://media.giphy.com/media/NEVT1WQFlHec8/giphy.gif); */
+                color: rgba(255, 255, 255, .5);
+                /* background-size: auto; */
+                /* -webkit-text-fill-color: transparent; */
+                /* -webkit-background-clip: text; */
             }
         }
     }
-    
+
     @media (max-width: 800px) {
         .img {
             background-size: 120%;
@@ -67,7 +80,7 @@
     /*
     Tagline
 */
-    
+
     .tagline h3 {
         color: $accent;
         text-align: center;
@@ -91,20 +104,20 @@
     /*
 	Navigation
 */
-    
+
     .main-nav {
         display: flex;
         lost-center: 500px;
         margin-bottom: 0;
     }
-    
+
     .main-nav a {
         text-decoration: none;
         color: $accent;
         font-size: 1.2em;
         font-weight: bold;
     }
-    
+
     .main-nav li {
         align-self: center;
         margin-left: 12px;
@@ -113,17 +126,17 @@
     /*
   Sections
 */
-    
+
     section {
         lost-flex-container: column;
     }
-    
+
     .title {
         font-size: 2em;
         lost-center: 500px;
         color: $dark;
     }
-    
+
     .main-text {
         color: $accent;
         lost-center: 900px 10% flex;
@@ -132,15 +145,15 @@
     /*
   About
 */
-    
+
     h2 {
         margin: 20px;
     }
     /*
-  Hire Us 
+  Hire Us
 */
     /* Hire Button */
-    
+
     .typeform-share {
         lost-center: 500px;
         text-decoration: none;
@@ -157,10 +170,10 @@
             background: rgba(#c0262d, 0.2);
         }
     }
-    /* 
+    /*
     Footer
 */
-    
+
     footer {
         & hr {
             width: 200px;
