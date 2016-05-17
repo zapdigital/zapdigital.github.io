@@ -78,11 +78,18 @@ gulp.task('markup', function () {
     .pipe(gulp.dest('dist/'));
 });
 
+// CNAME
+gulp.task('cname', function () {
+  return gulp
+    .src('CNAME')
+    .pipe(gulp.dest('dist/'));
+});
+
 // Build
 gulp.task('build', ['styles', 'markup', 'images']);
 
 // Deploy
-gulp.task('deploy', ['build'], function () {
+gulp.task('deploy', ['build', 'cname'], function () {
 	return gulp.src('./dist/**/*')
 		.pipe(ghPages({
 				branch: 'master',
