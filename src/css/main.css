@@ -18,7 +18,6 @@
     /*
 	Global Styles
     */
-
     /* Support Flexbox with Lost Grid */
     
     @lost flexbox flex;
@@ -65,6 +64,10 @@
                 margin: 0;
                 padding: 50px;
                 line-height: 1;
+                -webkit-background-clip: text;
+                color: transparent;
+                background-size: auto;
+                background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #F1C40F 10px, #F1C40F 20px), linear-gradient(to bottom, #F3CB2B, #F3CB2B);
             }
             & span {
                 font-size: .20em;
@@ -252,7 +255,7 @@
         footer {
             & ul li {
                 display: inline-block;
-                &:not(:last-child):after {
+                &:not(: last-child):after {
                     content: '/';
                     margin: 0 10px;
                 }
