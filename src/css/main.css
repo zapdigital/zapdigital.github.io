@@ -68,6 +68,7 @@
                 color: transparent;
                 background-size: auto;
                 background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #F1C40F 10px, #F1C40F 20px), linear-gradient(to bottom, #F3CB2B, #F3CB2B);
+                opacity: 1;
             }
             & span {
                 font-size: .20em;
