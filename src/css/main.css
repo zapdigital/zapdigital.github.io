@@ -1,77 +1,128 @@
     /*
   Colors
 */
-
+    
     $background: #e1eef6;
-    $dark: #D83840;
+    $dark: #c0392b;
     $primary: #fcbe32;
     $accent: #004e66;
+    /* Variables & rainbow colors for gradient */
+    
+    $red: #c0392b;
+    $orange: #e67e22;
+    $yellow: #f1c40f;
+    $green: #2ecc71;
+    $blue: #3498db;
+    $violet: #8e44ad;
+    $duration: 20s;
     /*
 	Global Styles
-*/
-    /* Support Flexbox with Lost Grid */
+    */
 
+    /* Support Flexbox with Lost Grid */
+    
     @lost flexbox flex;
     body,
     html {
         margin: 0;
         padding: 0;
     }
-
+    
     body {
         font-family: "Karla", sans-serif;
         background: $background;
     }
-
+    
     section {
         lost-utility: clearfix;
         lost-flex-container: row;
     }
     /* Redesign and banner-logo */
-
+    
     body {
         background: linear-gradient(45deg, #fff, #ccc);
         /* padding: 50px; */
         color: #111;
-
         /*
     Text Mask
 */
         & .box {
+            position: relative;
             font-family: "Fugaz One", sans-serif;
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
             line-height: 0.8;
             margin: 0;
-
-            background: url(https://media.giphy.com/media/3o85xuMj18HeA47AZy/giphy.gif);
-
+            background: linear-gradient(45deg, $red, $orange, $yellow, $green, $blue, $violet);
+            background-size: 1200% 1200%;
+            -webkit-animation: gradient $duration ease infinite;
+            -moz-animation: gradient $duration ease infinite;
+            animation: gradient $duration ease infinite;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             h1 {
-                font-size: 33vw;
+                font-size: calc(50px + 20vmin);
                 margin: 0;
                 padding: 50px;
                 line-height: 1;
             }
             & span {
-                font-size: .10em;
+                font-size: .20em;
                 line-height: .5em;
                 display: block;
             }
             &.img {
                 /* background-image: url(https://media.giphy.com/media/NEVT1WQFlHec8/giphy.gif); */
+                /*
                  background-image: url(https://media.giphy.com/media/3o85xuMj18HeA47AZy/giphy.gif);
                 background-size: auto 100%;
                 background-position: center;
+*/
                 /* background-image: url(https://media.giphy.com/media/NEVT1WQFlHec8/giphy.gif); */
-                color: rgba(255, 255, 255, .5);
+                /*                color: rgba(255, 255, 255, .5);*/
                 /* background-size: auto; */
                 /* -webkit-text-fill-color: transparent; */
                 /* -webkit-background-clip: text; */
             }
         }
     }
-
+    
+    @-webkit-keyframes gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    @-moz-keyframes gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    
     @media (max-width: 800px) {
         .img {
             background-size: 120%;
@@ -80,7 +131,7 @@
     /*
     Tagline
 */
-
+    
     .tagline h3 {
         color: $accent;
         text-align: center;
@@ -104,20 +155,20 @@
     /*
 	Navigation
 */
-
+    
     .main-nav {
         display: flex;
         lost-center: 500px;
         margin-bottom: 0;
     }
-
+    
     .main-nav a {
         text-decoration: none;
         color: $accent;
         font-size: 1.2em;
         font-weight: bold;
     }
-
+    
     .main-nav li {
         align-self: center;
         margin-left: 12px;
@@ -126,17 +177,17 @@
     /*
   Sections
 */
-
+    
     section {
         lost-flex-container: column;
     }
-
+    
     .title {
         font-size: 2em;
         lost-center: 500px;
         color: $dark;
     }
-
+    
     .main-text {
         color: $accent;
         lost-center: 900px 10% flex;
@@ -145,7 +196,7 @@
     /*
   About
 */
-
+    
     h2 {
         margin: 20px;
     }
@@ -153,7 +204,7 @@
   Hire Us
 */
     /* Hire Button */
-
+    
     .typeform-share {
         lost-center: 500px;
         text-decoration: none;
@@ -173,7 +224,7 @@
     /*
     Footer
 */
-
+    
     footer {
         & hr {
             width: 200px;
@@ -184,11 +235,8 @@
             text-align: center;
             padding: 0;
             & li {
-                display: inline-block;
-                &:not(:last-child):after {
-                    content: '/';
-                    margin: 0 10px;
-                }
+                display: block;
+                line-height: 2;
             }
         }
         & .zap-emoji {
@@ -197,5 +245,17 @@
             background-repeat: no-repeat;
             background-position: center;
             padding: 15px;
+        }
+    }
+    
+    @media(min-width: 500px) {
+        footer {
+            & ul li {
+                display: inline-block;
+                &:not(:last-child):after {
+                    content: '/';
+                    margin: 0 10px;
+                }
+            }
         }
     }
