@@ -1,4 +1,4 @@
-    /*
+/*
   Colors
 */
     
@@ -16,7 +16,7 @@
     $violet: #8e44ad;
     $duration: 20s;
     /*
-	Global Styles
+  Global Styles
     */
     /* Support Flexbox with Lost Grid */
     
@@ -67,7 +67,7 @@
                 -webkit-background-clip: text;
                 color: transparent;
                 background-size: auto;
-                background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #F1C40F 10px, #F1C40F 20px), linear-gradient(to bottom, #F3CB2B, #F3CB2B);
+                background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #F1C40F 20px, #F1C40F 20px), linear-gradient(to bottom, rgba(255, 226, 108, .6), rgba(255, 226, 108, .6));
                 opacity: 1;
             }
             & span {
@@ -157,7 +157,7 @@
         }
     }
     /*
-	Navigation
+  Navigation
 */
     
     .main-nav {
